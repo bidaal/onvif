@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/kerberos-io/onvif/xsd/iso8601"
+	"github.com/bidaal/onvif/xsd/iso8601"
 )
 
 /*

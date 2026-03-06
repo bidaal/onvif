@@ -13,12 +13,12 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/kerberos-io/onvif/networking"
-	"github.com/kerberos-io/onvif/xsd/onvif"
+	"github.com/bidaal/onvif/networking"
+	"github.com/bidaal/onvif/xsd/onvif"
 
 	"github.com/beevik/etree"
-	"github.com/kerberos-io/onvif/device"
-	"github.com/kerberos-io/onvif/gosoap"
+	"github.com/bidaal/onvif/device"
+	"github.com/bidaal/onvif/gosoap"
 )
 
 // Xlmns XML Scheam

@@ -4,7 +4,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"github.com/kerberos-io/onvif/xsd"
+	"github.com/bidaal/onvif/xsd"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -10,9 +10,9 @@ import (
 	"testing"
 
 	"github.com/beevik/etree"
-	"github.com/kerberos-io/onvif"
-	"github.com/kerberos-io/onvif/device"
-	wsdiscovery "github.com/kerberos-io/onvif/ws-discovery"
+	"github.com/bidaal/onvif"
+	"github.com/bidaal/onvif/device"
+	wsdiscovery "github.com/bidaal/onvif/ws-discovery"
 )
 
 func TestGetAvailableDevicesAtSpecificEthernetInterface(t *testing.T) {

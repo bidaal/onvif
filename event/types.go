@@ -7,9 +7,9 @@ import (
 	"fmt"
 	"reflect"
 
+	"github.com/bidaal/onvif/event/topic"
+	"github.com/bidaal/onvif/xsd"
 	mv "github.com/clbanning/mxj/v2"
-	"github.com/kerberos-io/onvif/event/topic"
-	"github.com/kerberos-io/onvif/xsd"
 )
 
 // Address Alias

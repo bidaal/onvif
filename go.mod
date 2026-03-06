@@ -1,4 +1,4 @@
-module github.com/kerberos-io/onvif
+module github.com/bidaal/onvif
 
 go 1.20
 

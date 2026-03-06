@@ -1,6 +1,6 @@
 package topic
 
-import "github.com/kerberos-io/onvif/xsd"
+import "github.com/bidaal/onvif/xsd"
 
 type MessageDescription struct {
 	IsProperty xsd.Boolean `xml:"IsProperty,attr"`

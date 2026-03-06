@@ -9,14 +9,14 @@
 package onvif
 
 import (
-	"github.com/kerberos-io/onvif/analytics"
-	"github.com/kerberos-io/onvif/device"
-	"github.com/kerberos-io/onvif/event"
-	"github.com/kerberos-io/onvif/imaging"
-	"github.com/kerberos-io/onvif/media"
-	"github.com/kerberos-io/onvif/media2"
-	"github.com/kerberos-io/onvif/ptz"
-	"github.com/kerberos-io/onvif/recording"
+	"github.com/bidaal/onvif/analytics"
+	"github.com/bidaal/onvif/device"
+	"github.com/bidaal/onvif/event"
+	"github.com/bidaal/onvif/imaging"
+	"github.com/bidaal/onvif/media"
+	"github.com/bidaal/onvif/media2"
+	"github.com/bidaal/onvif/ptz"
+	"github.com/bidaal/onvif/recording"
 )
 
 var AnalyticsFunctionMap = map[string]Function{

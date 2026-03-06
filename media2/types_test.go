@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/kerberos-io/onvif/xsd"
-	"github.com/kerberos-io/onvif/xsd/onvif"
+	"github.com/bidaal/onvif/xsd"
+	"github.com/bidaal/onvif/xsd/onvif"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

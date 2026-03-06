@@ -3,8 +3,8 @@ package analytics
 //go:generate python3 ../python/gen_commands.py
 
 import (
-	"github.com/kerberos-io/onvif/xsd"
-	"github.com/kerberos-io/onvif/xsd/onvif"
+	"github.com/bidaal/onvif/xsd"
+	"github.com/bidaal/onvif/xsd/onvif"
 )
 
 // GetSupportedAnalyticsModules and its properties are defined in the Onvif specification:

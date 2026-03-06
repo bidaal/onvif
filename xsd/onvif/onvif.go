@@ -1,7 +1,7 @@
 package onvif
 
 import (
-	"github.com/kerberos-io/onvif/xsd"
+	"github.com/bidaal/onvif/xsd"
 )
 
 // BUG(r): Enum types implemented as simple string

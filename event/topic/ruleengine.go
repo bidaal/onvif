@@ -1,6 +1,6 @@
 package topic
 
-import "github.com/kerberos-io/onvif/xsd"
+import "github.com/bidaal/onvif/xsd"
 
 type RuleEngine struct {
 	Topic                *xsd.Boolean          `xml:"topic,attr"`

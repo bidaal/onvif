@@ -2,11 +2,12 @@ package main
 
 import (
 	"encoding/xml"
-	"github.com/kerberos-io/onvif"
-	"github.com/kerberos-io/onvif/event"
-	"github.com/kerberos-io/onvif/xsd"
 	"io/ioutil"
 	"log"
+
+	"github.com/bidaal/onvif"
+	"github.com/bidaal/onvif/event"
+	"github.com/bidaal/onvif/xsd"
 )
 
 // === Geovision ===

@@ -3,8 +3,8 @@ package recording
 import (
 	"encoding/xml"
 
-	"github.com/kerberos-io/onvif/xsd"
-	"github.com/kerberos-io/onvif/xsd/onvif"
+	"github.com/bidaal/onvif/xsd"
+	"github.com/bidaal/onvif/xsd/onvif"
 )
 
 // TrackType type

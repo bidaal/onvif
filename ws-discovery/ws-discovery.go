@@ -4,7 +4,7 @@ import (
 	"strings"
 
 	"github.com/beevik/etree"
-	"github.com/kerberos-io/onvif/gosoap"
+	"github.com/bidaal/onvif/gosoap"
 )
 
 // BuildProbeMessage generates a SOAP ws-discovery Probe message

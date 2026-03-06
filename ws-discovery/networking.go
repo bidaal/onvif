@@ -23,8 +23,8 @@ import (
 	"time"
 
 	"github.com/beevik/etree"
+	"github.com/bidaal/onvif"
 	"github.com/google/uuid"
-	"github.com/kerberos-io/onvif"
 	"golang.org/x/net/ipv4"
 )
 

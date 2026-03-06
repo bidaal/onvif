@@ -11,11 +11,11 @@ import (
 	"strings"
 
 	"github.com/beevik/etree"
+	"github.com/bidaal/onvif"
+	"github.com/bidaal/onvif/gosoap"
+	"github.com/bidaal/onvif/networking"
+	wsdiscovery "github.com/bidaal/onvif/ws-discovery"
 	"github.com/gin-gonic/gin"
-	"github.com/kerberos-io/onvif"
-	"github.com/kerberos-io/onvif/gosoap"
-	"github.com/kerberos-io/onvif/networking"
-	wsdiscovery "github.com/kerberos-io/onvif/ws-discovery"
 )
 
 func RunApi() {

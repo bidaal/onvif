@@ -18,7 +18,7 @@ HEADER = '''\
 
 '''
 
-BASE_MODULE_NAME = 'github.com/kerberos-io/onvif'
+BASE_MODULE_NAME = 'github.com/bidaal/onvif'
 
 SERVICE_NAMES = [
     'analytics',

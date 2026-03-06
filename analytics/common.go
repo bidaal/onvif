@@ -1,6 +1,6 @@
 package analytics
 
-import "github.com/kerberos-io/onvif/xsd"
+import "github.com/bidaal/onvif/xsd"
 
 type Parameters struct {
 	SimpleItemDescription  []SimpleItemDescription  `json:",omitempty"`

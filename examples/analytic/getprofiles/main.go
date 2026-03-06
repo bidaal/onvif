@@ -1,10 +1,11 @@
 package main
 
 import (
-	"github.com/kerberos-io/onvif"
-	"github.com/kerberos-io/onvif/media2"
 	"io/ioutil"
 	"log"
+
+	"github.com/bidaal/onvif"
+	"github.com/bidaal/onvif/media2"
 )
 
 func main() {
