@@ -56,6 +56,7 @@ var DeviceFunctionMap = map[string]Function{
 	GetDNS:                        &device.GetDNSFunction{},
 	GetDPAddresses:                &device.GetDPAddressesFunction{},
 	GetDeviceInformation:          &device.GetDeviceInformationFunction{},
+	GetDigitalInputs:              &device.GetDigitalInputsFunction{},
 	GetDiscoveryMode:              &device.GetDiscoveryModeFunction{},
 	GetDot11Capabilities:          &device.GetDot11CapabilitiesFunction{},
 	GetDot11Status:                &device.GetDot11StatusFunction{},
@@ -72,7 +73,6 @@ var DeviceFunctionMap = map[string]Function{
 	GetNetworkProtocols:           &device.GetNetworkProtocolsFunction{},
 	GetPkcs10Request:              &device.GetPkcs10RequestFunction{},
 	GetRelayOutputs:               &device.GetRelayOutputsFunction{},
-	GetDigitalInputs:              &device.GetDigitalInputsFunction{},
 	GetRemoteDiscoveryMode:        &device.GetRemoteDiscoveryModeFunction{},
 	GetRemoteUser:                 &device.GetRemoteUserFunction{},
 	GetScopes:                     &device.GetScopesFunction{},
@@ -238,10 +238,13 @@ var MediaFunctionMap = map[string]Function{
 }
 
 var Media2FunctionMap = map[string]Function{
-	AddConfiguration:           &media2.AddConfigurationFunction{},
-	GetAnalyticsConfigurations: &media2.GetAnalyticsConfigurationsFunction{},
-	GetProfiles:                &media2.GetProfilesFunction{},
-	RemoveConfiguration:        &media2.RemoveConfigurationFunction{},
+	AddConfiguration:                    &media2.AddConfigurationFunction{},
+	GetAnalyticsConfigurations:          &media2.GetAnalyticsConfigurationsFunction{},
+	GetProfiles:                         &media2.GetProfilesFunction{},
+	GetVideoEncoderConfigurationOptions: &media2.GetVideoEncoderConfigurationOptionsFunction{},
+	GetVideoEncoderConfigurations:       &media2.GetVideoEncoderConfigurationsFunction{},
+	RemoveConfiguration:                 &media2.RemoveConfigurationFunction{},
+	SetVideoEncoderConfiguration:        &media2.SetVideoEncoderConfigurationFunction{},
 }
 
 var PTZFunctionMap = map[string]Function{

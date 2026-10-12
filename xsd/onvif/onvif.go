@@ -2043,3 +2043,37 @@ type DateRequest struct {
 	Month *xsd.Int `xml:"onvif:Month,omitempty"`
 	Day   *xsd.Int `xml:"onvif:Day,omitempty"`
 }
+
+type VideoResolution2 struct {
+	Width  int `xml:"Width"`
+	Height int `xml:"Height"`
+}
+
+type VideoRateControl2 struct {
+	ConstantBitRate *bool   `xml:"ConstantBitRate,attr,omitempty"`
+	FrameRateLimit  float64 `xml:"FrameRateLimit"`
+	BitrateLimit    int     `xml:"BitrateLimit"`
+	AverageBitRate  *int    `xml:"AverageBitRate,omitempty"`
+}
+
+type VideoEncoder2Configuration struct {
+	ConfigurationEntity
+	GovLength           *int                    `xml:"GovLength,attr,omitempty"`
+	Profile             *string                 `xml:"Profile,attr,omitempty"`
+	GuaranteedFrameRate *bool                   `xml:"GuaranteedFrameRate,attr,omitempty"`
+	Encoding            string                  `xml:"Encoding"`
+	Resolution          VideoResolution2        `xml:"Resolution"`
+	RateControl         *VideoRateControl2      `xml:"RateControl,omitempty"`
+	Multicast           *MulticastConfiguration `xml:"Multicast,omitempty"`
+	Quality             float64                 `xml:"Quality"`
+}
+
+type VideoEncoder2ConfigurationOptions struct {
+	Encoding             string             `xml:"Encoding"`
+	QualityRange         FloatRange         `xml:"QualityRange"`
+	ResolutionsAvailable []VideoResolution2 `xml:"ResolutionsAvailable"`
+	BitrateRange         IntRange           `xml:"BitrateRange"`
+	GovLengthRange       *string            `xml:"GovLengthRange,attr,omitempty"`
+	FrameRatesSupported  *string            `xml:"FrameRatesSupported,attr,omitempty"`
+	ProfilesSupported    *string            `xml:"ProfilesSupported,attr,omitempty"`
+}

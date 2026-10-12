@@ -197,6 +197,15 @@ func (_ *GetDeviceInformationFunction) Response() interface{} {
 	return &GetDeviceInformationResponse{}
 }
 
+type GetDigitalInputsFunction struct{}
+
+func (_ *GetDigitalInputsFunction) Request() interface{} {
+	return &GetDigitalInputs{}
+}
+func (_ *GetDigitalInputsFunction) Response() interface{} {
+	return &GetDigitalInputsResponse{}
+}
+
 type GetDiscoveryModeFunction struct{}
 
 func (_ *GetDiscoveryModeFunction) Request() interface{} {
@@ -339,15 +348,6 @@ func (_ *GetRelayOutputsFunction) Request() interface{} {
 }
 func (_ *GetRelayOutputsFunction) Response() interface{} {
 	return &GetRelayOutputsResponse{}
-}
-
-type GetDigitalInputsFunction struct{}
-
-func (_ *GetDigitalInputsFunction) Request() interface{} {
-	return &GetDigitalInputs{}
-}
-func (_ *GetDigitalInputsFunction) Response() interface{} {
-	return &GetDigitalInputsResponse{}
 }
 
 type GetRemoteDiscoveryModeFunction struct{}

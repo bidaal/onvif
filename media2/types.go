@@ -91,3 +91,30 @@ type Configuration struct {
 	Type    *xsd.String `xml:"tr2:Type,omitempty"`
 	Token   *xsd.String `xml:"tr2:Token,omitempty"`
 }
+
+type GetVideoEncoderConfigurations struct {
+	XMLName            string `xml:"tr2:GetVideoEncoderConfigurations"`
+	ConfigurationToken string `xml:"tr2:ConfigurationToken,omitempty"`
+	ProfileToken       string `xml:"tr2:ProfileToken,omitempty"`
+}
+
+type GetVideoEncoderConfigurationsResponse struct {
+	Configurations []onvif.VideoEncoder2Configuration `xml:"Configurations"`
+}
+
+type SetVideoEncoderConfiguration struct {
+	XMLName       string                           `xml:"tr2:SetVideoEncoderConfiguration"`
+	Configuration onvif.VideoEncoder2Configuration `xml:"tr2:Configuration"`
+}
+
+type SetVideoEncoderConfigurationResponse struct{}
+
+type GetVideoEncoderConfigurationOptions struct {
+	XMLName            string `xml:"tr2:GetVideoEncoderConfigurationOptions"`
+	ConfigurationToken string `xml:"tr2:ConfigurationToken,omitempty"`
+	ProfileToken       string `xml:"tr2:ProfileToken,omitempty"`
+}
+
+type GetVideoEncoderConfigurationOptionsResponse struct {
+	Options []onvif.VideoEncoder2ConfigurationOptions `xml:"Options"`
+}
